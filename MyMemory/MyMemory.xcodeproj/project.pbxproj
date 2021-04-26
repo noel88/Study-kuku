@@ -10,9 +10,12 @@
 		0D181FBE2636277F00E43813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D181FBD2636277F00E43813 /* AppDelegate.swift */; };
 		0D181FC02636277F00E43813 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D181FBF2636277F00E43813 /* SceneDelegate.swift */; };
 		0D181FC52636277F00E43813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D181FC32636277F00E43813 /* Main.storyboard */; };
-		0D181FC82636277F00E43813 /* MyMemory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D181FC62636277F00E43813 /* MyMemory.xcdatamodeld */; };
 		0D181FCA2636278000E43813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D181FC92636278000E43813 /* Assets.xcassets */; };
-		0D181FCD2636278000E43813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D181FCB2636278000E43813 /* LaunchScreen.storyboard */; };
+		0D181FDC2636EEDD00E43813 /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D181FDB2636EEDD00E43813 /* MemoListVC.swift */; };
+		0D181FDF2636EF2B00E43813 /* MemoFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D181FDE2636EF2B00E43813 /* MemoFormVC.swift */; };
+		0D181FE22636EF3E00E43813 /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D181FE12636EF3E00E43813 /* MemoReadVC.swift */; };
+		0D1820132636F2E000E43813 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1820122636F2E000E43813 /* MemoCell.swift */; };
+		0D1820172636F30800E43813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D1820152636F30800E43813 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,13 @@
 		0D181FBD2636277F00E43813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D181FBF2636277F00E43813 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0D181FC42636277F00E43813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0D181FC72636277F00E43813 /* MyMemory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyMemory.xcdatamodel; sourceTree = "<group>"; };
 		0D181FC92636278000E43813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0D181FCC2636278000E43813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D181FCE2636278000E43813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D181FDB2636EEDD00E43813 /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
+		0D181FDE2636EF2B00E43813 /* MemoFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVC.swift; sourceTree = "<group>"; };
+		0D181FE12636EF3E00E43813 /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
+		0D1820122636F2E000E43813 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		0D1820162636F30800E43813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +66,12 @@
 				0D181FBF2636277F00E43813 /* SceneDelegate.swift */,
 				0D181FC32636277F00E43813 /* Main.storyboard */,
 				0D181FC92636278000E43813 /* Assets.xcassets */,
-				0D181FCB2636278000E43813 /* LaunchScreen.storyboard */,
 				0D181FCE2636278000E43813 /* Info.plist */,
-				0D181FC62636277F00E43813 /* MyMemory.xcdatamodeld */,
+				0D181FDB2636EEDD00E43813 /* MemoListVC.swift */,
+				0D181FDE2636EF2B00E43813 /* MemoFormVC.swift */,
+				0D181FE12636EF3E00E43813 /* MemoReadVC.swift */,
+				0D1820122636F2E000E43813 /* MemoCell.swift */,
+				0D1820152636F30800E43813 /* LaunchScreen.storyboard */,
 			);
 			path = MyMemory;
 			sourceTree = "<group>";
@@ -124,7 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D181FCD2636278000E43813 /* LaunchScreen.storyboard in Resources */,
+				0D1820172636F30800E43813 /* LaunchScreen.storyboard in Resources */,
 				0D181FCA2636278000E43813 /* Assets.xcassets in Resources */,
 				0D181FC52636277F00E43813 /* Main.storyboard in Resources */,
 			);
@@ -137,9 +146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D181FC82636277F00E43813 /* MyMemory.xcdatamodeld in Sources */,
+				0D181FDF2636EF2B00E43813 /* MemoFormVC.swift in Sources */,
+				0D181FE22636EF3E00E43813 /* MemoReadVC.swift in Sources */,
 				0D181FBE2636277F00E43813 /* AppDelegate.swift in Sources */,
+				0D181FDC2636EEDD00E43813 /* MemoListVC.swift in Sources */,
 				0D181FC02636277F00E43813 /* SceneDelegate.swift in Sources */,
+				0D1820132636F2E000E43813 /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,10 +166,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		0D181FCB2636278000E43813 /* LaunchScreen.storyboard */ = {
+		0D1820152636F30800E43813 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0D181FCC2636278000E43813 /* Base */,
+				0D1820162636F30800E43813 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -341,19 +353,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		0D181FC62636277F00E43813 /* MyMemory.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				0D181FC72636277F00E43813 /* MyMemory.xcdatamodel */,
-			);
-			currentVersion = 0D181FC72636277F00E43813 /* MyMemory.xcdatamodel */;
-			path = MyMemory.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 0D181FB22636277F00E43813 /* Project object */;
 }
