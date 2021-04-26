@@ -9,9 +9,18 @@ import UIKit
 import CoreData
 
 @main
+// 전역변수를 저정하기 가장 적합한 곳.
+// 앱 전체의 라이프 사이클 관리함.
+// 앱 내에서 반드시 하나의 인스턴스만 존재하도록 시스템적으로 보장되어 있을 뿐 아니라 어디서든 쉽게 접근 할 수 있도록 참조 경로가 제공되는 객체
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
+    
+    // 앱의 여러 객체가 참조하는 공유 데이터
+    // 1. MemoList는 뷰 컨트롤러나 객체가 접근하기 쉬운 위치에 저장돠어야 함.
+    // 2. 사용 중간에 메모리 관리 이슈나 객체의 소멸로 인해 데이터가 삭제되지 않아야 함.
+    // 3. 여러곳에 사용하더라도 일관성을 유지 할 수 있도록 파편화되거나 쪼개어지지 않아야 한다.
+    var memoList = [MemoData]()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
