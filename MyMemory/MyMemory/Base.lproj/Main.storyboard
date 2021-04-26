@@ -164,7 +164,7 @@
         <!--상세 화면-->
         <scene sceneID="yMs-os-5t4">
             <objects>
-                <viewController title="상세 화면" id="bvC-LW-YBV" userLabel="상세 화면" customClass="MemoReadVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoRead" title="상세 화면" id="bvC-LW-YBV" userLabel="상세 화면" customClass="MemoReadVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FUS-7y-maM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,6 +206,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="9mS-a9-cxv"/>
+                    <connections>
+                        <outlet property="contents" destination="0MW-hS-ZYB" id="pdh-xl-ndh"/>
+                        <outlet property="img" destination="DA7-th-VYw" id="u4z-Sg-u7a"/>
+                        <outlet property="subject" destination="oXE-oM-ddd" id="okU-fY-e8M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lyd-NU-9Qm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

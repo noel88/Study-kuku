@@ -52,6 +52,17 @@ class MemoListVC: UITableViewController {
         
         return cell
     }
+    
+    // 테이블의 행을 선택했을 때 호출되는 메서드
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let row = self.appDelegate.memoList[indexPath.row]
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "MemoRead") as? MemoReadVC else {
+            return
+        }
+        
+        vc.param = row
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
   
 
 }
