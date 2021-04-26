@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -134,11 +135,117 @@
                             <outlet property="delegate" destination="eJw-E1-8ya" id="ymY-cx-zUC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="목록" id="Phy-lK-KMe"/>
+                    <navigationItem key="navigationItem" title="목록" id="Phy-lK-KMe">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="0gg-iH-NWJ">
+                            <connections>
+                                <segue destination="mFH-Bm-Ok3" kind="show" id="bGL-gp-OK3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="tvS-Qq-xS2" kind="show" identifier="read_sg" id="74Q-Fb-KyJ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cvy-Be-UCN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="605.79710144927537" y="138.61607142857142"/>
+        </scene>
+        <!--상세 화면-->
+        <scene sceneID="V1h-Oc-tE6">
+            <objects>
+                <viewController title="상세 화면" id="tvS-Qq-xS2" userLabel="상세 화면" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sDa-UU-cv8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20u-5t-n3c">
+                                <rect key="frame" x="0.0" y="104" width="414" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DYs-Hd-MA2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xw8-0Y-cT8">
+                                <rect key="frame" x="0.0" y="181" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="3wo-dL-h85"/>
+                                    <constraint firstAttribute="height" constant="250" id="mU2-Nn-dH0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wl7-DY-vWz">
+                                <rect key="frame" x="0.0" y="145" width="414" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s2b-Fq-6rR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wl7-DY-vWz" firstAttribute="leading" secondItem="s2b-Fq-6rR" secondAttribute="leading" id="1gT-Ly-Zag"/>
+                            <constraint firstItem="20u-5t-n3c" firstAttribute="leading" secondItem="s2b-Fq-6rR" secondAttribute="leading" id="EWx-qs-lqV"/>
+                            <constraint firstItem="Xw8-0Y-cT8" firstAttribute="top" secondItem="wl7-DY-vWz" secondAttribute="bottom" constant="20" id="EaC-2d-SIz"/>
+                            <constraint firstItem="s2b-Fq-6rR" firstAttribute="trailing" secondItem="20u-5t-n3c" secondAttribute="trailing" id="PQB-ey-Jqt"/>
+                            <constraint firstItem="s2b-Fq-6rR" firstAttribute="trailing" secondItem="wl7-DY-vWz" secondAttribute="trailing" id="Txh-uj-gby"/>
+                            <constraint firstItem="20u-5t-n3c" firstAttribute="top" secondItem="s2b-Fq-6rR" secondAttribute="top" constant="16" id="ll6-wm-sap"/>
+                            <constraint firstItem="Xw8-0Y-cT8" firstAttribute="leading" secondItem="s2b-Fq-6rR" secondAttribute="leading" id="qEY-Wa-xE3"/>
+                            <constraint firstItem="wl7-DY-vWz" firstAttribute="top" secondItem="20u-5t-n3c" secondAttribute="bottom" constant="20" id="qbg-60-3bz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="6hq-Du-NzN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WbI-TE-Q15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605.79710144927537" y="889.95535714285711"/>
+        </scene>
+        <!--메모작성-->
+        <scene sceneID="Yu8-sB-8ET">
+            <objects>
+                <viewController id="mFH-Bm-Ok3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XwB-qv-uVU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GJz-SC-Gbc">
+                                <rect key="frame" x="0.0" y="89" width="414" height="250"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Ytc-nm-fTk"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U0P-SV-NF6">
+                                <rect key="frame" x="0.0" y="354" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="8oX-qb-6MD"/>
+                                    <constraint firstAttribute="width" constant="250" id="h4B-JU-wIk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sWv-EJ-Vgh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U0P-SV-NF6" firstAttribute="top" secondItem="GJz-SC-Gbc" secondAttribute="bottom" constant="15" id="J5r-P4-OgT"/>
+                            <constraint firstItem="GJz-SC-Gbc" firstAttribute="leading" secondItem="sWv-EJ-Vgh" secondAttribute="leading" id="KuQ-eU-eDe"/>
+                            <constraint firstItem="U0P-SV-NF6" firstAttribute="leading" secondItem="sWv-EJ-Vgh" secondAttribute="leading" id="ONr-Ia-7jp"/>
+                            <constraint firstItem="sWv-EJ-Vgh" firstAttribute="trailing" secondItem="GJz-SC-Gbc" secondAttribute="trailing" id="VAu-EL-YMw"/>
+                            <constraint firstItem="GJz-SC-Gbc" firstAttribute="top" secondItem="sWv-EJ-Vgh" secondAttribute="top" constant="1" id="YBN-GP-0ym"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="메모작성" id="NSc-eR-LN9">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="IKC-Gs-pHW"/>
+                            <barButtonItem title="저장" id="IeT-cw-Jhg"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xic-ay-wru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1370" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="e4E-BN-TJV">
@@ -160,8 +267,14 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
