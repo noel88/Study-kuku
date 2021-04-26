@@ -16,6 +16,7 @@
 		0D181FE22636EF3E00E43813 /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D181FE12636EF3E00E43813 /* MemoReadVC.swift */; };
 		0D1820132636F2E000E43813 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1820122636F2E000E43813 /* MemoCell.swift */; };
 		0D1820172636F30800E43813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D1820152636F30800E43813 /* LaunchScreen.storyboard */; };
+		0D18201B2636F3A000E43813 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18201A2636F3A000E43813 /* MemoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0D181FE12636EF3E00E43813 /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
 		0D1820122636F2E000E43813 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		0D1820162636F30800E43813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D18201A2636F3A000E43813 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				0D181FE12636EF3E00E43813 /* MemoReadVC.swift */,
 				0D1820122636F2E000E43813 /* MemoCell.swift */,
 				0D1820152636F30800E43813 /* LaunchScreen.storyboard */,
+				0D18201A2636F3A000E43813 /* MemoData.swift */,
 			);
 			path = MyMemory;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				0D181FDF2636EF2B00E43813 /* MemoFormVC.swift in Sources */,
 				0D181FE22636EF3E00E43813 /* MemoReadVC.swift in Sources */,
 				0D181FBE2636277F00E43813 /* AppDelegate.swift in Sources */,
+				0D18201B2636F3A000E43813 /* MemoData.swift in Sources */,
 				0D181FDC2636EEDD00E43813 /* MemoListVC.swift in Sources */,
 				0D181FC02636277F00E43813 /* SceneDelegate.swift in Sources */,
 				0D1820132636F2E000E43813 /* MemoCell.swift in Sources */,
