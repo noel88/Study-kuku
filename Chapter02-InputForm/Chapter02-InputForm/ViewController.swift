@@ -89,6 +89,9 @@ class ViewController: UIViewController {
         
         self.paramUpdate.addTarget(self, action: #selector(presetUpdateValue(_:)), for: .valueChanged)
         self.paramInterval.addTarget(self, action: #selector(presetIntervalValue(_:)), for: .valueChanged)
+        
+        let submitBtn = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(submit(_:)))
+        self.navigationItem.rightBarButtonItem = submitBtn
     }
     
     @objc func presetUpdateValue(_ sender: UISwitch) {
@@ -98,5 +101,15 @@ class ViewController: UIViewController {
     @objc func presetIntervalValue(_ sender: UIStepper) {
         self.txtInterval.text = ("\(Int(sender.value)) 분마다")
     }
+    
+    @objc func submit(_ sender: Any) {
+        let rvc = ReadViewController()
+        rvc.pEmail = self.paramEmail.text
+        rvc.pUpdate = self.paramUpdate.isOn
+        rvc.pInterval = self.paramInterval.value
+        
+        self.navigationController?.pushViewController(rvc, animated: true)
+    }
+    
 }
 
