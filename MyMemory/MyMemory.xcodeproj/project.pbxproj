@@ -17,6 +17,7 @@
 		0D1820132636F2E000E43813 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1820122636F2E000E43813 /* MemoCell.swift */; };
 		0D1820172636F30800E43813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D1820152636F30800E43813 /* LaunchScreen.storyboard */; };
 		0D18201B2636F3A000E43813 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18201A2636F3A000E43813 /* MemoData.swift */; };
+		0D18201F2637000B00E43813 /* fountainpen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D18201E2637000B00E43813 /* fountainpen@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0D1820122636F2E000E43813 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		0D1820162636F30800E43813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D18201A2636F3A000E43813 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
+		0D18201E2637000B00E43813 /* fountainpen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fountainpen@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		0D181FB12636277F00E43813 = {
 			isa = PBXGroup;
 			children = (
+				0D18201D2636FFF400E43813 /* Resources */,
 				0D181FBC2636277F00E43813 /* MyMemory */,
 				0D181FBB2636277F00E43813 /* Products */,
 			);
@@ -77,6 +80,14 @@
 				0D18201A2636F3A000E43813 /* MemoData.swift */,
 			);
 			path = MyMemory;
+			sourceTree = "<group>";
+		};
+		0D18201D2636FFF400E43813 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0D18201E2637000B00E43813 /* fountainpen@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			files = (
 				0D1820172636F30800E43813 /* LaunchScreen.storyboard in Resources */,
 				0D181FCA2636278000E43813 /* Assets.xcassets in Resources */,
+				0D18201F2637000B00E43813 /* fountainpen@2x.png in Resources */,
 				0D181FC52636277F00E43813 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
