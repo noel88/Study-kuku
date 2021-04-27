@@ -4,8 +4,8 @@
 
 ---
 
-- Chapter 01 - 4월 26일
-- Chapter 02 - 4월 27일
+- ✅ Chapter 01 - 4월 26일
+- ✅ Chapter 02 - 4월 27일
 - Chapter 03 - 4월 28, 29일
 - Chapter 04 - 4월 30일
 - Chapter 05 - 5월 1일
