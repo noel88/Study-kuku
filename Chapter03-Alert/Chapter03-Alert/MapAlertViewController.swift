@@ -30,6 +30,15 @@ class MapAlertViewController: UIViewController {
         imageBtn.addTarget(self, action: #selector(imageAlert(_:)), for: .touchUpInside)
         
         self.view.addSubview(imageBtn)
+        
+        let sliderBtn = UIButton(type: .system)
+        
+        sliderBtn.frame = CGRect(x: 0, y: 250, width: 100, height: 30)
+        sliderBtn.center.x = self.view.frame.width / 2
+        sliderBtn.setTitle("Slider Alert", for: .normal)
+        sliderBtn.addTarget(self, action: #selector(sliderAlert(_:)), for: .touchUpInside)
+        
+        self.view.addSubview(sliderBtn)
     }
     
     @objc
@@ -82,5 +91,19 @@ class MapAlertViewController: UIViewController {
         self.present(alert, animated: false, completion: nil)
     }
     
+    @objc
+    func sliderAlert(_ sender: Any) {
+        let contentVC = ControlViewController()
+        
+        let alert = UIAlertController(title: nil, message: "이번 글의 평점을 입력해주세요.", preferredStyle: .alert)
+        alert.setValue(contentVC, forKey: "contentViewController")
+        
+        let okAction = UIAlertAction(title: "Ok", style: .default) { (_) in
+            print(">>> slider Value = \(contentVC.sliderValue)")
+        }
+        alert.addAction(okAction)
+        
+        self.present(alert, animated: false, completion: nil)
+    }
 
 }
